@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1618343119859932');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1618343119859932&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Mastermind – Prediction Guru G</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    /* Naya Vibrant Background Gradient */
+    background: linear-gradient(135deg, #0b091a 0%, #08162b 50%, #051e1a 100%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  /* Enhanced Dynamic Glow Background */
+  .bg-glow {
+    position: fixed; inset: 0; z-index: 0;
+    background: radial-gradient(ellipse 60% 50% at 50% 20%, rgba(0, 255, 204, 0.12) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 40% at 80% 80%, rgba(238, 0, 255, 0.08) 0%, transparent 60%);
+    animation: bgPulse 5s ease-in-out infinite alternate;
+  }
+  @keyframes bgPulse {
+    from { opacity: 0.6; }
+    to   { opacity: 1; }
+  }
+
+  .card {
+    position: relative; z-index: 1;
+    width: 100%; max-width: 420px;
+    margin: 20px auto;
+    /* Card ka background thoda shiny dark violet tinted rakha hai */
+    background: linear-gradient(160deg, #111424 0%, #091322 100%);
+    border: 1.5px solid rgba(0, 255, 204, 0.35); /* Cyan neon border */
+    border-radius: 24px;
+    padding: 32px 24px 28px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 255, 204, 0.15), 0 0 80px rgba(0,0,0,0.9);
+    overflow: hidden;
+  }
+
+  /* Shimmer line changed to a punchy Neon Cyan to Magenta look */
+  .card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, transparent, #00ffcc, #ff007f, #00ffcc, transparent);
+    animation: shimmer 2.5s linear infinite;
+    background-size: 200% 100%;
+  }
+  @keyframes shimmer {
+    0%   { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  /* Avatar */
+  .avatar-wrap {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  .avatar-wrap img {
+    width: 90px; height: 90px;
+    border-radius: 50%;
+    border: 3px solid #ff007f; /* Magenta border for extra pop */
+    object-fit: cover;
+    display: block;
+  }
+  .avatar-ring {
+    position: absolute; inset: -6px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 0, 127, 0.3);
+    animation: rotate 6s linear infinite;
+    border-top-color: #ff007f;
+    border-right-color: transparent;
+    border-bottom-color: #00ffcc;
+    border-left-color: transparent;
+  }
+  @keyframes rotate { to { transform: rotate(360deg); } }
+
+  .avatar-emoji {
+    position: absolute; bottom: 0; right: -4px;
+    font-size: 22px;
+  }
+
+  /* Channel name */
+  .channel-name {
+    font-size: 1rem;
+    color: #00ffcc; /* Changed to eye-catching Cyan */
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  /* Main title */
+  .guru-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 4px 0 14px;
+  }
+  .guru-title span {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff; /* White main name with neon glow */
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255, 0, 127, 0.6);
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  .crown { font-size: 1.4rem; }
+
+  /* Subscriber pill */
+  .subs-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 255, 204, 0.08);
+    border: 1px solid rgba(0, 255, 204, 0.25);
+    border-radius: 100px;
+    padding: 6px 18px;
+    margin-bottom: 18px;
+  }
+  .subs-dot {
+    width: 8px; height: 8px;
+    background: #00ff88;
+    border-radius: 50%;
+    animation: blink 1.2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .subs-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .subs-label {
+    font-size: 0.7rem;
+    color: #00ffcc;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* Timer */
+  .timer-section { margin-bottom: 18px; }
+  .timer-label {
+    font-size: 0.7rem;
+    color: #a0a5c0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .timer-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  .time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .time-circle {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    background: #060914;
+    border: 2px solid rgba(255, 0, 127, 0.4); /* Border changed to Pink/Magenta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 16px rgba(255, 0, 127, 0.15), inset 0 0 12px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+  }
+  .time-circle::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: conic-gradient(rgba(255, 0, 127, 0.2) 0deg, transparent 360deg);
+    animation: rotateSlow 8s linear infinite;
+  }
+  @keyframes rotateSlow { to { transform: rotate(360deg); } }
+
+  .time-num {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #00ffcc; /* Numbers are bright Cyan now */
+    line-height: 1;
+    z-index: 1;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+  }
+  .time-unit {
+    font-size: 0.55rem;
+    color: #8a90af;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 204, 0.25), transparent);
+    margin: 16px 0;
+  }
+
+  /* Tagline */
+  .tagline {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255,255,255,0.2);
+  }
+
+  /* Stats */
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+    text-align: left;
+  }
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(0, 255, 204, 0.15);
+    border-radius: 10px;
+    padding: 10px 14px;
+  }
+  .stat-icon { font-size: 1.1rem; }
+  .stat-text {
+    font-size: 0.88rem;
+    color: #e2e8f0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .stat-badge {
+    margin-left: auto;
+    background: rgba(0,255,136,0.1);
+    color: #00ff88;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    border: 1px solid rgba(0,255,136,0.25);
+  }
+
+  /* Buttons */
+  .btn-wrap { margin-bottom: 10px; }
+
+  .join-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+  }
+  .join-btn:hover { transform: translateY(-3px); }
+
+  /* Premium Gradient Telegram Button (Cyan to Magenta mix) */
+  .btn-primary {
+    background: linear-gradient(135deg, #00f0ff, #ff007f);
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(0, 240, 255, 0.35);
+    border: none;
+  }
+  .btn-primary:hover { box-shadow: 0 6px 32px rgba(255, 0, 127, 0.6); }
+
+  .tg-icon { font-size: 1.3rem; }
+
+  /* Footer text */
+  .footer-note {
+    margin-top: 18px;
+    font-size: 0.72rem;
+    color: #64748b;
+    line-height: 1.6;
+  }
+  .footer-note a { color: #00ffcc; text-decoration: none; font-weight: bold; }
+  .footer-note a:hover { text-decoration: underline; }
+
+  /* Floating particles */
+  .particles {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    overflow: hidden;
+  }
+  .particle {
+    position: absolute;
+    width: 2px; height: 2px;
+    background: rgba(0, 255, 204, 0.4);
+    border-radius: 50%;
+    animation: float linear infinite;
+  }
+  @keyframes float {
+    0%   { transform: translateY(100vh) scale(0); opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 0.5; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Particles -->
+<div class="particles" id="particles"></div>
+<div class="bg-glow"></div>
+
+<div class="card">
+
+  <!-- Avatar -->
+  <div class="avatar-wrap">
+    <img src="image.png" alt="TOSS FIXER" onerror="this.style.display='none'">
+    <div class="avatar-ring"></div>
+    <div class="avatar-emoji">🏏</div>
+  </div>
+<!-- 
+  <div class="channel-name">Cricket Mastermind</div> -->
+
+  <div class="guru-title">
+    <span class="crown">👑</span>
+    <span>TOSS FIXER..✌🏻™</span>
+    <span class="crown">👑</span>
+  </div>
+
+  <!-- Subscriber Count -->
+  <div class="subs-pill">
+    <div class="subs-dot"></div>
+    <div>
+      <div class="subs-text" id="sub-count">71 105 subscribers</div>
+    </div>
+  </div>
+
+  <!-- Timer -->
+  <div class="timer-section">
+    <div class="timer-label">⚡ Next Signal Drops In</div>
+    <div class="timer-row">
+      <div class="time-box">
+        <div class="time-circle">
+          <span class="time-num" id="t-min">08</span>
+          <span class="time-unit">Min</span>
+        </div>
+      </div>
+      <div class="time-box">
+        <div class="time-circle">
+          <span class="time-num" id="t-sec">59</span>
+          <span class="time-unit">Sec</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <div class="btn-wrap">
+    <a href="https://t.me/+TO6jJdyoA2s5NGY1" class="join-btn btn-primary" target="_blank">
+      <span class="tg-icon">✈</span> Join Now For Free
+    </a>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="tagline">🏆 Asia Ka Sabse Bada Sports Analyst</div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat-item">
+      <span class="stat-icon">🎯</span>
+      <span class="stat-text">98% Accurate Predictions</span>
+      <span class="stat-badge">PROVEN</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-icon">🏏</span>
+      <span class="stat-text">40/39 Matches Pass</span>
+      <span class="stat-badge">RECORD</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-icon">📅</span>
+      <span class="stat-text">7+ Years Experience</span>
+      <span class="stat-badge">EXPERT</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="footer-note">
+    This Channel Advertised By <a href="" target="_blank">siviagency</a><br>
+    <span style="color:#475569; font-size:0.65rem;">Disclaimer: For entertainment purposes only. Trade responsibly.</span>
+  </div>
+
+</div>
+
+<script>
+  // Countdown timer
+  let totalSec = 8 * 60 + 59;
+  function updateTimer() {
+    const m = Math.floor(totalSec / 60);
+    const s = totalSec % 60;
+    document.getElementById('t-min').textContent = String(m).padStart(2, '0');
+    document.getElementById('t-sec').textContent = String(s).padStart(2, '0');
+    if (totalSec > 0) {
+      totalSec--;
+    } else {
+      totalSec = 8 * 60 + 59; // loop
+    }
+  }
+  updateTimer();
+  setInterval(updateTimer, 1000);
+
+  // Subscriber count animation
+  let subCount = 47477;
+  setInterval(() => {
+    if (Math.random() > 0.6) {
+      subCount += Math.floor(Math.random() * 3) + 1;
+      document.getElementById('sub-count').textContent = subCount.toLocaleString('en-IN');
+    }
+  }, 4000);
+
+  // Particles
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 20; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.animationDuration = (6 + Math.random() * 10) + 's';
+    p.style.animationDelay = (Math.random() * 10) + 's';
+    p.style.width = p.style.height = (1 + Math.random() * 3) + 'px';
+    p.style.background = Math.random() > 0.5 ? 'rgba(0, 255, 204, 0.5)' : 'rgba(255, 0, 127, 0.4)';
+    container.appendChild(p);
+  }
+</script>
+</body>
+</html>
